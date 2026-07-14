@@ -68,8 +68,14 @@ public class DragonFollowOwnerGoal extends Goal
         {
             return false;
         }
-        if (dragon.getCommandState() != TameableDragon.STATE_FOLLOW) return false;
-
+        if (dragon.getCommandState() != TameableDragon.STATE_FOLLOW) {
+            return false;
+        }
+        if (dragon.getTarget() != null && dragon.getTarget().isAlive()) {
+            if (this.dragon.distanceToSqr(livingentity) < (double)(this.teleportDistance * this.teleportDistance)) {
+                return false; // stay in combat if the owner is relatively close
+            }
+        }
         this.owner = livingentity;
         return true;
     }
@@ -83,6 +89,14 @@ public class DragonFollowOwnerGoal extends Goal
         if (dragon.isOrderedToSit())
         {
             return false;
+        }
+        if (this.owner == null) {
+            return false;
+        }
+        if (dragon.getTarget() != null && dragon.getTarget().isAlive()) {
+            if (this.dragon.distanceToSqr(this.owner) < (double)(this.teleportDistance * this.teleportDistance)) {
+                return false; // stay in combat if the owner is relatively close
+            }
         }
         return this.dragon.distanceToSqr(this.owner) >= (double)(this.stopDistance * this.stopDistance);
     }
@@ -115,6 +129,7 @@ public class DragonFollowOwnerGoal extends Goal
                 else if (
                         !dragon.isFlying()
                                 && dragon.canFly()
+                                && dragon.getTarget() == null
                                 && (this.owner.blockPosition().getY() - dragon.blockPosition().getY()) >= startDistance)
                 {
                     dragon.liftOff();

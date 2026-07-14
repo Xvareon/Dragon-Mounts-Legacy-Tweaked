@@ -89,7 +89,7 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
     public static final double BASE_SPEED_FLYING = 0.32;
     public static final double BASE_DAMAGE = 8;
     public static final double BASE_HEALTH = 100;
-    public static final double BASE_FOLLOW_RANGE = 24;
+    public static final double BASE_FOLLOW_RANGE = 64;
     public static final int BASE_KB_RESISTANCE = 1;
     public static final float BASE_WIDTH = 2.75f; // adult sizes
     public static final float BASE_HEIGHT = 2.75f;
@@ -116,7 +116,7 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
     public static final int AGE_UPDATE_INTERVAL = 100; // every 5 seconds
     public static final UUID SCALE_MODIFIER_UUID = UUID.fromString("856d4ba4-9ffe-4a52-8606-890bb9be538b"); // just a random uuid I took online
     public static final UUID ARMOR_MODIFIER_UUID = UUID.fromString("2c7a6c2e-6f4c-4d4e-9f19-9c1d2bb6a111"); // just a random uuid I took online (1)
-    public static final int GROUND_CLEARENCE_THRESHOLD = 3; // height in blocks (multiplied by scale of dragon)
+    public static final int GROUND_CLEARANCE_THRESHOLD = 3; // height in blocks (multiplied by scale of dragon)
 
     // server/client delegates
     private final DragonAnimator animator;
@@ -193,7 +193,7 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
         }
 
         goalSelector.addGoal(4, new MeleeAttackGoal(this, 1, true));
-        goalSelector.addGoal(5, new DragonFollowOwnerGoal(this, 1f, 24f, 3.5f, 32f));
+        goalSelector.addGoal(5, new DragonFollowOwnerGoal(this, 1.0f, 20.0f, 3.5f, 32.0f));
         goalSelector.addGoal(6, new DragonWanderAreaGoal(this, 0.85f));
         goalSelector.addGoal(7, new DragonBreedGoal(this));
         goalSelector.addGoal(8, new WaterAvoidingRandomStrollGoal(this, 0.85f) {
@@ -202,11 +202,27 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
                 return getCommandState() != STATE_WANDER && super.canUse();
             }
         });
-        goalSelector.addGoal(9, new LookAtPlayerGoal(this, LivingEntity.class, 16f));
+        goalSelector.addGoal(9, new LookAtPlayerGoal(this, LivingEntity.class, 20.0f));
         goalSelector.addGoal(10, new RandomLookAroundGoal(this));
 
-        targetSelector.addGoal(0, new OwnerHurtByTargetGoal(this));
-        targetSelector.addGoal(1, new OwnerHurtTargetGoal(this));
+        targetSelector.addGoal(0, new OwnerHurtTargetGoal(this) {
+            @Override
+            public boolean canContinueToUse() {
+                LivingEntity target = this.mob.getTarget();
+                if (target == null || !target.isAlive()) return false;
+
+                // Only drop target if outside fireball range
+                double maxRange = BASE_FOLLOW_RANGE; // match DragonFireballAttackGoal
+                if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
+                    return false;
+                }
+
+                // Ignore LOS and reach checks, keep target until dead or out of range
+                this.mob.setTarget(target);
+                return true;
+            }
+        });
+        targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
         targetSelector.addGoal(2, new HurtByTargetGoal(this));
         targetSelector.addGoal(3, new NonTameRandomTargetGoal<>(this, Animal.class, false, e -> !(e instanceof TameableDragon)));
     }
@@ -478,7 +494,7 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
         }
 
         // update nearGround state when moving for flight and animation logic
-        nearGround = onGround() || !level().noCollision(this, new AABB(getX(), getY(), getZ(), getX(), getY() - (GROUND_CLEARENCE_THRESHOLD * getScale()), getZ()));
+        nearGround = onGround() || !level().noCollision(this, new AABB(getX(), getY(), getZ(), getX(), getY() - (GROUND_CLEARANCE_THRESHOLD * getScale()), getZ()));
 
         // update flying state based on the distance to the ground
         boolean flying = shouldFly();
