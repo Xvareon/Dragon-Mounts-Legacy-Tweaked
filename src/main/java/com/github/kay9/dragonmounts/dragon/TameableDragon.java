@@ -187,13 +187,13 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
     {
         goalSelector.addGoal(1, new FloatGoal(this));
         goalSelector.addGoal(2, new SitWhenOrderedToGoal(this));
+        goalSelector.addGoal(3, new DragonFollowOwnerGoal(this, 1.0f, 20.0f, 3.5f, 32.0f));
 
         if (DMLConfig.isBreathEnabled()) {
-            this.goalSelector.addGoal(3, new DragonFireballAttackGoal(this));
+            this.goalSelector.addGoal(4, new DragonFireballAttackGoal(this));
         }
 
-        goalSelector.addGoal(4, new MeleeAttackGoal(this, 1, true));
-        goalSelector.addGoal(5, new DragonFollowOwnerGoal(this, 1.0f, 20.0f, 3.5f, 32.0f));
+        goalSelector.addGoal(5, new MeleeAttackGoal(this, 1, true));
         goalSelector.addGoal(6, new DragonWanderAreaGoal(this, 0.85f));
         goalSelector.addGoal(7, new DragonBreedGoal(this));
         goalSelector.addGoal(8, new WaterAvoidingRandomStrollGoal(this, 0.85f) {
