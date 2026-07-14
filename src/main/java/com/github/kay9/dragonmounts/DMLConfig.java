@@ -128,8 +128,8 @@ public class DMLConfig
         BREATH_DAMAGE = configurator.comment("The base damage dealt by all dragon breaths. Default is 6.0 (3 hearts).")
                 .defineInRange("global_breath_damage", 6.0, 0.0, Double.MAX_VALUE);
 
-        BREATH_RANGE = configurator.comment("The max distance a dragon breath projectile can travel. Default is 25.0 blocks.")
-                .defineInRange("global_breath_range", 25.0, 1.0, Double.MAX_VALUE);
+        BREATH_RANGE = configurator.comment("The max distance a dragon breath projectile can travel. Default is 64.0 blocks.")
+                .defineInRange("global_breath_range", 64.0, 1.0, Double.MAX_VALUE);
 
         WANDER_RANGE = configurator.comment(
                         "The radius of the area a dragon will patrol when in 'Wander' mode.",
