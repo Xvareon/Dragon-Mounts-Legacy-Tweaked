@@ -210,21 +210,53 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
             public boolean canContinueToUse() {
                 LivingEntity target = this.mob.getTarget();
                 if (target == null || !target.isAlive()) return false;
-
-                // Only drop target if outside fireball range
-                double maxRange = BASE_FOLLOW_RANGE; // match DragonFireballAttackGoal
+                double maxRange = BASE_FOLLOW_RANGE;
                 if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
                     return false;
                 }
-
-                // Ignore LOS and reach checks, keep target until dead or out of range
                 this.mob.setTarget(target);
                 return true;
             }
         });
-        targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
-        targetSelector.addGoal(2, new HurtByTargetGoal(this));
-        targetSelector.addGoal(3, new NonTameRandomTargetGoal<>(this, Animal.class, false, e -> !(e instanceof TameableDragon)));
+        targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this) {
+            @Override
+            public boolean canContinueToUse() {
+                LivingEntity target = this.mob.getTarget();
+                if (target == null || !target.isAlive()) return false;
+                double maxRange = BASE_FOLLOW_RANGE;
+                if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
+                    return false;
+                }
+                this.mob.setTarget(target);
+                return true;
+            }
+        });
+        targetSelector.addGoal(2, new HurtByTargetGoal(this) {
+            @Override
+            public boolean canContinueToUse() {
+                LivingEntity target = this.mob.getTarget();
+                if (target == null || !target.isAlive()) return false;
+                double maxRange = BASE_FOLLOW_RANGE;
+                if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
+                    return false;
+                }
+                this.mob.setTarget(target);
+                return true;
+            }
+        });
+        targetSelector.addGoal(3, new NonTameRandomTargetGoal<>(this, Animal.class, false, e -> !(e instanceof TameableDragon)) {
+            @Override
+            public boolean canContinueToUse() {
+                LivingEntity target = this.mob.getTarget();
+                if (target == null || !target.isAlive()) return false;
+                double maxRange = BASE_FOLLOW_RANGE;
+                if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
+                    return false;
+                }
+                this.mob.setTarget(target);
+                return true;
+            }
+        });
     }
 
     @Override
