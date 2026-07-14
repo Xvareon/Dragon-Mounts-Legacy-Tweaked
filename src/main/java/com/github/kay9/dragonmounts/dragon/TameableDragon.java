@@ -206,55 +206,107 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
         goalSelector.addGoal(10, new RandomLookAroundGoal(this));
 
         targetSelector.addGoal(0, new OwnerHurtTargetGoal(this) {
+            private int unseenTicks = 0;
+            private static final int UNSEEN_MEMORY_TICKS = 60;
+
             @Override
             public boolean canContinueToUse() {
                 LivingEntity target = this.mob.getTarget();
                 if (target == null || !target.isAlive()) return false;
-                double maxRange = BASE_FOLLOW_RANGE;
-                if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
+                if (this.mob.distanceToSqr(target) > BASE_FOLLOW_RANGE * BASE_FOLLOW_RANGE) return false;
+
+                if (this.mob.hasLineOfSight(target)) {
+                    unseenTicks = 0;
+                } else if (++unseenTicks > UNSEEN_MEMORY_TICKS) {
                     return false;
                 }
+
                 this.mob.setTarget(target);
                 return true;
+            }
+
+            @Override
+            public void start() {
+                unseenTicks = 0;
+                super.start();
             }
         });
         targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this) {
+            private int unseenTicks = 0;
+            private static final int UNSEEN_MEMORY_TICKS = 60;
+
             @Override
             public boolean canContinueToUse() {
                 LivingEntity target = this.mob.getTarget();
                 if (target == null || !target.isAlive()) return false;
-                double maxRange = BASE_FOLLOW_RANGE;
-                if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
+                if (this.mob.distanceToSqr(target) > BASE_FOLLOW_RANGE * BASE_FOLLOW_RANGE) return false;
+
+                if (this.mob.hasLineOfSight(target)) {
+                    unseenTicks = 0;
+                } else if (++unseenTicks > UNSEEN_MEMORY_TICKS) {
                     return false;
                 }
+
                 this.mob.setTarget(target);
                 return true;
+            }
+
+            @Override
+            public void start() {
+                unseenTicks = 0;
+                super.start();
             }
         });
         targetSelector.addGoal(2, new HurtByTargetGoal(this) {
+            private int unseenTicks = 0;
+            private static final int UNSEEN_MEMORY_TICKS = 60;
+
             @Override
             public boolean canContinueToUse() {
                 LivingEntity target = this.mob.getTarget();
                 if (target == null || !target.isAlive()) return false;
-                double maxRange = BASE_FOLLOW_RANGE;
-                if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
+                if (this.mob.distanceToSqr(target) > BASE_FOLLOW_RANGE * BASE_FOLLOW_RANGE) return false;
+
+                if (this.mob.hasLineOfSight(target)) {
+                    unseenTicks = 0;
+                } else if (++unseenTicks > UNSEEN_MEMORY_TICKS) {
                     return false;
                 }
+
                 this.mob.setTarget(target);
                 return true;
             }
+
+            @Override
+            public void start() {
+                unseenTicks = 0;
+                super.start();
+            }
         });
         targetSelector.addGoal(3, new NonTameRandomTargetGoal<>(this, Animal.class, false, e -> !(e instanceof TameableDragon)) {
+            private int unseenTicks = 0;
+            private static final int UNSEEN_MEMORY_TICKS = 60;
+
             @Override
             public boolean canContinueToUse() {
                 LivingEntity target = this.mob.getTarget();
                 if (target == null || !target.isAlive()) return false;
-                double maxRange = BASE_FOLLOW_RANGE;
-                if (this.mob.distanceToSqr(target) > maxRange * maxRange) {
+                if (this.mob.distanceToSqr(target) > BASE_FOLLOW_RANGE * BASE_FOLLOW_RANGE) return false;
+
+                if (this.mob.hasLineOfSight(target)) {
+                    unseenTicks = 0;
+                } else if (++unseenTicks > UNSEEN_MEMORY_TICKS) {
                     return false;
                 }
+
                 this.mob.setTarget(target);
                 return true;
+            }
+
+            @Override
+            public void start() {
+                unseenTicks = 0;
+                super.start();
             }
         });
     }
