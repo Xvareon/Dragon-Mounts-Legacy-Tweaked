@@ -105,7 +105,11 @@ public class DMLConfig
                         "These entries define the chance values of which a dragon egg can appear in its respective loot table.",
                         "Due to the static nature of configs in general, DML cannot modify the chances of custom breed eggs",
                         "outside the built-in defaults, so those should be configured to use minecraft's built in random chance conditions.",
-                        "(It is however, possible to point custom egg chances to the built-in values via the loot condition, therefore using a config chance)")
+                        "It is however, possible to point custom egg chances to the built-in values via the loot condition, therefore using a config chance",
+                        "In which dragon mounts legacy tweaked uses. This is also possible if you made a custom breed via datapack.",
+                        "If you want to modify spawnrates of dragons this fork added, this link will serve as your reference to what structures they can spawn in.",
+                        "See https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/blob/mc/1.20-updates/src/generated/resources/data/forge/loot_modifiers/global_loot_modifiers.json"
+        )
                 .push("egg_loot_chances");
         EGG_CHANCES = defineChanceEntries(configurator);
         configurator.pop();
