@@ -2,7 +2,7 @@ MOD LINK: https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-legacy-twea
 
 NOTICE: This is a fork of Dragon Mounts: Legacy by Kay9Unit, for the original mod please go to their page, all credits go to them and their contributors but do not report bugs caused by this fork to them! Report it to me instead.
 
-This mod is incompatible with Dragon Mounts Patches since it incorporated the issues that dragon mounts patches fixes. The mixins will be incompatible with the base code be advised. This is also incompatible with the original Dragon Mounts Legacy mod as this is a standalone mod, be advised.
+This mod is incompatible with Dragon Mounts Patches since it incorporated the issues that dragon mounts patches fixes. The mixins will be incompatible with the base code. This is also incompatible with the original Dragon Mounts Legacy mod as this is a standalone mod, be advised.
 
 TWEAKS:
 
@@ -114,7 +114,7 @@ TWEAKS:
 
 - Dragon breath (end) has a chance of summoning a harming cloud upon explosion or impact.
 
-- Dragon breath (storm) has a chance of summoning lightning and a lightning field that damages mobs upon explosion or impact. It gives redstone signals when it hits lightning rods and can clean copper. It can also transform mobs like creepers into charged creepers, pigs into zombie piglins, etc.
+- Dragon breath (storm) has a chance of summoning lightning upon explosion or impact and a lightning field that stuns mobs that come into contact with it. It gives redstone signals when it hits lightning rods and can clean copper. It can also transform mobs like creepers into charged creepers, pigs into zombie piglins, etc.
 
 - Dragon breath (wither) inflicts withering on entities caught in the radius. Places wither roses on victims. The explosion respects minecraft griefing rules.
 
@@ -137,13 +137,17 @@ Please checkout https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-2 mad
 FAQs:
 
 Q: How do I get dragons/dragon eggs?
-A: There's two ways. OPTION ONE: is by killing the Ender Dragon again by respawning it, then you can transform the egg to what variant you like. In the config, the dragon egg will always spawn at the dragon fountain unless a mod is conflicting with it. OPTION TWO: is by chests like the original mod but this is disabled by default. If you want dragon eggs to spawn in some chests in structures, you need to enable them in the configs ("use_loot_tables = true") first then restart the game. The new variants of dragon eggs will share the spawn weight of the base dragons. For example, if you ramp up the spawn weight of aether dragons, the gale dragon will also have a high chance to spawn and if you ramp up the spawn weight of the fire dragon, the blue fire dragon will follow.
+A: There's two ways. OPTION ONE: is by killing the Ender Dragon again by respawning it, then you can transform the egg to what variant you like. In the config, the dragon egg will always spawn at the dragon fountain unless a mod is conflicting with it. OPTION TWO: is by chests like the original mod but this is disabled by default. If you want dragon eggs to spawn in some chests in structures, you need to enable them in the configs ("use_loot_tables = true") first then restart the game. The new variants of dragon eggs will share the spawn weight of the base dragons. For example, if you ramp up the spawn weight of aether dragons, the gale dragon will also have a high chance to spawn and if you ramp up the spawn weight of the fire dragon, the blue fire dragon will follow. See https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/blob/mc/1.20-updates/src/generated/resources/data/forge/loot_modifiers/global_loot_modifiers.json for more information.
 
 Q: I can't open my dragon's inventory, why is this happening?
 A: Your keybind might have conflicts with other mods. You can change the keybind of the dragon inventory to amend this.
 
 Q: My game is crashing. What could be the problem?
 A: You could be playing with the Dragon Mounts Patches mod which is incompatible with this mod from version 9983 onwards since its fixes has been incorporated to the base mod. If that is not the cause, you can comment your crashlog via textfile in the comments section or the github issues page. Without a crashlog, I cannot help you.
+
+Q: How do I get a normal end dragon?
+
+A: You can hatch the egg anywhere near blocks that cannot change its variant like grass or glass blocks. Be careful with this since if you hatch them with other dragons' habitat blocks, they will change (Example: magma blocks will turn them to fire dragon egg, water source or flowing will turn them to water dragon egg, end stone will turn them to primal dragon egg, etc. Not to worry though, you can simply turn them back to normal end dragon egg via placing them on non-habitat blocks like grass or glass.) See https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/tree/mc/1.20-updates/src/generated/resources/data/dragonmounts/tags/blocks for the habitat blocks references.
 
 Q: I switched from the base Dragon Mounts Legacy mod to this one and my dragon's attributes are not reflecting correctly, like the HP, flight speed, and armor values are not the same with other dragons. What could be the cause?
 A: Previous versions preserve the attribute of dragons in existing worlds. The new attributes would only reflect when you use the later versions of the mod or when hatching new dragons. I suggest you update to the latest version and hatch some new dragons. Consider your old dragons "Legacy" dragons.
