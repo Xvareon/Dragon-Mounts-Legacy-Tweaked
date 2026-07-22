@@ -146,7 +146,6 @@ Q: My game is crashing. What could be the problem?
 A: You could be playing with the Dragon Mounts Patches mod which is incompatible with this mod from version 9983 onwards since its fixes has been incorporated to the base mod. If that is not the cause, you can comment your crashlog via textfile in the comments section or the github issues page. Without a crashlog, I cannot help you.
 
 Q: How do I get a normal end dragon?
-
 A: You can hatch the egg anywhere near blocks that cannot change its variant like grass or glass blocks. Be careful with this since if you hatch them with other dragons' habitat blocks, they will change (Example: magma blocks will turn them to fire dragon egg, water source or flowing will turn them to water dragon egg, end stone will turn them to primal dragon egg, etc. Not to worry though, you can simply turn them back to normal end dragon egg via placing them on non-habitat blocks like grass or glass.) See https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/tree/mc/1.20-updates/src/generated/resources/data/dragonmounts/tags/blocks for the habitat blocks references.
 
 Q: I switched from the base Dragon Mounts Legacy mod to this one and my dragon's attributes are not reflecting correctly, like the HP, flight speed, and armor values are not the same with other dragons. What could be the cause?
