@@ -123,10 +123,16 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 **A:** Hatch the egg near neutral blocks that do not trigger a variant (e.g., grass or glass blocks). Be careful: placing the egg near habitat blocks will change its type (e.g., magma blocks turn it to Fire, water sources to Water, end stone to Primal End). If changed accidentally, place it back on non-habitat blocks like grass or glass to revert it to a normal End Dragon egg.
 * See the [Habitat Blocks Reference](https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/tree/mc/1.20-updates/src/generated/resources/data/dragonmounts/tags/blocks) for details.
 
+#### Q: Is this compatible with DML's addons?
+**A:** Probably not. You can test it though. Some bugs might occur.
+
 #### Q: I am creating a custom breed via datapack and want to set its breath type. How do I do that?
 **A:** Include the breath string in your breed's name. For example, a breed named `"mutant_sculk"` will automatically use sculk breath.
 * **Available breath strings:** `fire` (default), `ice`, `storm`, `wither`, `end`, `sculk`, `blue_fire`, `black_fire` (e.g., `"x_ice"`, `"ice_x"`).
 * You can edit language files to display a clean name in-game while maintaining string detection.
+
+#### Q: Why are my egg textures bugged/missing?
+**A:** You likely have a certain version of Embeddium and Modernfix. Simply update those two and this will be fixed.
 
 #### Q: I switched from base Dragon Mounts Legacy to this mod and attributes (HP, flight speed, armor) are not updating correctly. Why?
 **A:** Previous versions preserve entity attributes in existing worlds. New attribute values apply only to newly hatched dragons or updated versions. It is recommended to update to the latest version and hatch new dragons (existing dragons will remain as "Legacy" dragons).
