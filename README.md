@@ -1,170 +1,139 @@
-MOD LINK: https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-legacy-tweaked
+# Dragon Mounts: Legacy Tweaked
+
+MOD LINK: [Dragon Mounts Legacy Tweaked](https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-legacy-tweaked)
+
+> **NOTICE:** This is a fork of Dragon Mounts: Legacy by Kay9Unit. For the original mod please go to their page. All credits go to them and their contributors, but **do not report bugs caused by this fork to them!** Report it to me instead.
+
+This mod is incompatible with *Dragon Mounts Patches* since it incorporated the issues that *Dragon Mounts Patches* fixes. The mixins will be incompatible with the base code. This is also incompatible with the original *Dragon Mounts Legacy* mod as this is a standalone mod, be advised.
+
+---
+
+## TWEAKS
+
+* **New Dragon Breaths!** Besides Fire, there are Ice, Storm, Wither, Sculk, and Ender Breaths now corresponding to appropriate dragon breeds.
+* **Combat AI:** Dragons now shoot breath balls when in combat.
+* **Keybind Attack:** When ridden, dragons can shoot fireballs via keybind (default: `G`).
+* **Dual Riding:** Dragons can be dual ridden by players.
+    * The owner is the only one that can control the dragon.
+    * The owner is the only one that can activate the fireball breath via keybind.
+    * When the owner dismounts, dies, or disconnects, the 2nd passenger will be forcefully dismounted as well.
+* **Armor Mechanics:** Dragons can now be given armor via Copper, Iron, Gold, Emerald, Diamond, and Netherite blocks. Each provides a different armor value. Armor can be retrieved via shears like the saddle. If given another block while wearing armor, the armor will swap and the player will get the previous armor's block back.
+* **Chest Mechanics:** Players can give dragons a chest and access them via keybind (default: `H`) whenever they are riding them or looking at them (vanilla interaction range). Chests can be retrieved via shears like the saddle. If the dragon dies or the chest is sheared away from the dragon, the contents drop to the ground.
+* **Wander Mode:** In this state, the dragon will be anchored in an area. The area size is configurable. To set your dragon to wander mode, simply Shift + Right-Click (like how you make them sit or follow). There will be text indicating which mode they are currently in (this also shows when dismounting). The modes cycle through three states: **sit**, **follow**, and **wander**.
+    * When you ride the dragon upon setting them to follow or wander, they will retain that mode upon dismounting.
+    * However, when the dragon is in sit mode and you ride and dismount, they will be in a 4th mode (neutral mode, they don't go back to sitting).
+* **New Dragon Textures and Dragon Types!**
+* Updated the textures of some of the original dragons.
+
+### New Dragon Breaths & Breeds
+
+* **Storm Dragon:** Lower armor with slightly fast movement speed, flight speed, melee damage, and is immune to lightning bolt damage. Can be hatched when surrounded by copper blocks. It has the *Electro Step* ability that cleans weathered copper.
+* **Blue Fire Dragon:** Can be hatched via obsidian. It breathes blue fire (cosmetic change from normal fire breath).
+* **Terra Dragon:** Increased HP and armor, immune to stalagmites and stalactites. Can be hatched via andesite, granite, diorite, and terracotta blocks.
+* **Zombie Dragon:** Less armor and HP, but immune to drowning, suffocation, poison, and magic. Can be hatched via bone blocks. Has the *Putrid Step* ability which occasionally:
+    * Turns grass blocks into Moss, Mycelium, or Coarse Dirt.
+    * Places dead bushes in sandy terrain.
+    * Places mushrooms.
+* **Solar Dragon:** Immune to withering. Can be hatched via gold blocks.
+* **Lunar Dragon:** Immune to withering. Can be hatched via crying obsidian.
+* **Aurora Dragon:** Immune to freezing. Can be hatched via purpur blocks.
+* **Magic Dragon:** Immune to magic. Shoots ender breath balls. Can be hatched via enchantment table blocks.
+* **Crystal Dragon:** Increased HP and armor, immune to stalagmites and stalactites. Can be hatched via amethyst blocks.
+* **Bronze Dragon:** Same attributes as Storm Dragons. Can be hatched via redstone lamps.
+* **Soul Nether Dragon:** Soul Fire-able blocks can no longer hatch the Nether Dragon; it will instead hatch this new variant (cosmetic change only). Can be hatched by blocks that emit soul fire.
+* **Ocean Dragon:** Prismarine and Sea Lanterns can no longer hatch the Water Dragon; it will instead hatch this new variant (cosmetic change only).
+* **Wither Dragon:** Immune to withering, slightly low HP. Shoots wither skulls which inflict withering. Can be hatched via wither skeleton skulls. Has the *Wither Step* ability that occasionally spawns wither roses and soul soil on blocks it walks on.
+* **Gale Dragon:** Very similar to Aether Dragons. Can be hatched via blue terracotta blocks.
+* **Sculk Dragon:** Immune to in-wall damage and sonic booms. Can be hatched via sculk blocks. Shoots Sonic Boom breaths. Has the *Sculk Step* ability which spreads sculk.
+* **Primal End Dragon:** Can be hatched via endstone.
+* **Primal Nether Dragon:** Can be hatched via red terracotta blocks.
+* **Eclipse Dragon:** Can be hatched via yellow terracotta blocks.
+* **Dark Dragon:** Can be hatched via black terracotta blocks. Shoots wither breath balls. Immune to lightning bolts and freezing.
+* **Black Fire Dragon:** Can be hatched via black concrete. It breathes black fire (cosmetic change from normal fire breath).
+* **Sylphid Dragon:** Immune to drowning, slightly faster flight speed. Can be hatched via light blue terracotta.
+* **Monarch Dragon:** Increased HP, armor, and damage, but susceptible to Minecraft's dragon breath damage. Can be hatched via red glazed terracotta.
+* **Jade Dragon:** High armor and armor toughness, reduced HP, slightly faster movement speed. Can be hatched via emerald blocks. Has the *Jade Step* ability that occasionally turns stone or deepslate into emerald ore.
+* **Red Dragon:** Slightly higher HP. Can be hatched via red concrete.
+* **Elder Dragon:** Similar to the Monarch Dragon, but breathes blue fire. Can be hatched via gray terracotta.
+* **Shadow Dragon:** Similar to the Monarch Dragon, but breathes black fire. Can be hatched via black glazed terracotta.
+* **Light Dragon:** Shoots storm breath balls. Immune to lightning bolts and freezing. Can be hatched via white terracotta.
+* **Blood Dragon:** Similar to the Monarch Dragon. Can be hatched via redstone.
+
+### Additional Adjustments
+
+* **Healing Items:** Added fish items to items that can heal dragons.
+* **Aether Dragons:** Can now be hatched via glowstone blocks.
+* **Hotfeet Ability:** Can now turn wet sponges into sponges and blackstone into magma blocks (inverse of *Hydrostep*).
+* **Dragon Variant Attribute Tweaks:**
+    * All dragons are fire immune.
+    * All dragons have increased health and armor.
+    * All dragons have natural regeneration.
+    * End Dragons and Water Dragons have increased HP.
+    * Ice Dragons and Fire Dragons have increased damage.
+    * Forest Dragons have increased movement speed.
+    * Aether Dragons are unchanged (their `+flight speed` attribute is sufficient).
+    * Nether Dragons are unchanged (their default `+armor` is sufficient).
+    * Ghost Dragons have less HP, but gain armor toughness and arrow immunity.
+
+### Dragon Breath Mechanics
+
+* **Fire Breath:** Sets entities on fire when directly hit if they are not fire immune and are within the explosion radius.
+    * Ensures consistent damage and fire application.
+    * Respects `doFireTick` and `mobGriefing` gamerules.
+    * Lights up lit blocks such as candles, campfires, redstone lamps, smokers, furnaces, blast furnaces, and TNT. Modded blocks with the `LIT` blockstate will also be lit.
+    * If the block has the `SOUL_FIRE_BASE_BLOCKS` Minecraft tag, it will set it to soul fire instead.
+    * Expires immediately upon touching water and cannot pass through water (except for Black Fire breath).
+* **Ice Breath:** Applies the freeze effect to mobs not immune to freezing. Has a chance to summon a snowfield upon impact/explosion that slows and applies Mining Fatigue to mobs. Extinguishes surface fires and unlights blocks (campfires, candles, lamps, etc.). Turns water into ice and lava into cobblestone/obsidian.
+* **End Breath:** Has a chance of summoning a harming cloud upon impact/explosion.
+* **Storm Breath:** Has a chance of summoning lightning upon impact/explosion and a lightning field that stuns contacting mobs. Emits redstone signals when hitting lightning rods and cleans copper. Can transform mobs (e.g., creepers into charged creepers, pigs into zombie piglins).
+* **Wither Breath:** Inflicts withering on entities in the radius and places wither roses on victims. Respects Minecraft griefing rules.
+* **Sculk Breath:** Inflicts darkness and knockback over a larger radius compared to other breaths. Triggers a sound event to activate sculk sensors.
+
+### Miscellaneous Improvements
+
+* Updated JP and UK translations.
+* Added Chinese, Russian, Spanish, French, and Portuguese (South American and European) translations.
+* Tweaked dragon tails of Nether, Water, Ghost, and Forest dragons.
+* Added configurations for dragon breaths.
+
+---
+
+> Huge thanks to the **Dragon Mounts 2** team for allowing me to use the updated textures for dragons!
+>
+> * **Dragon Mounts Discord:** [https://discord.gg/Ewm8aTTJ3K](https://discord.gg/Ewm8aTTJ3K)
+> * **Dragon Mounts 2 (1.12.2):** Check out [Dragon Mounts 2 on CurseForge](https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-2)!
 
-NOTICE: This is a fork of Dragon Mounts: Legacy by Kay9Unit, for the original mod please go to their page, all credits go to them and their contributors but do not report bugs caused by this fork to them! Report it to me instead.
+---
 
-This mod is incompatible with Dragon Mounts Patches since it incorporated the issues that dragon mounts patches fixes. The mixins will be incompatible with the base code. This is also incompatible with the original Dragon Mounts Legacy mod as this is a standalone mod, be advised.
+## FAQ
 
-TWEAKS:
+#### Q: How do I get dragons / dragon eggs?
+**A:** There are two ways:
+* **Option 1:** Kill the Ender Dragon again by respawning it, then transform the egg into your preferred variant. (In the config, the dragon egg will always spawn at the dragon fountain unless a mod conflicts).
+* **Option 2:** Find them in chests like the original mod (disabled by default). Enable `use_loot_tables = true` in the configs and restart the game. New egg variants share spawn weights with base dragons (e.g., increasing Aether Dragon spawn weight also increases Gale Dragon spawn weight).
+* See the [Global Loot Modifiers Reference](https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/blob/mc/1.20-updates/src/generated/resources/data/forge/loot_modifiers/global_loot_modifiers.json) for details.
 
+#### Q: I can't open my dragon's inventory. Why is this happening?
+**A:** Your keybind might conflict with another mod. Change the dragon inventory keybind in controls to resolve this.
 
-- New Dragon Breaths! Besides Fire, there are Ice, Storm, Wither, Sculk, and Ender Breaths now corresponding to appropriate dragon breeds.
+#### Q: My game is crashing. What could be the problem?
+**A:** You may be running *Dragon Mounts Patches*, which is incompatible with this mod from version 9983 onwards (its fixes are already integrated). If that is not the cause, attach your crash log via text file in the comments or GitHub issues page. **Without a crash log, troubleshooting is not possible.**
 
-- Dragons now shoot breath balls occasionally when in combat.
+#### Q: How do I get a normal End Dragon?
+**A:** Hatch the egg near neutral blocks that do not trigger a variant (e.g., grass or glass blocks). Be careful: placing the egg near habitat blocks will change its type (e.g., magma blocks turn it to Fire, water sources to Water, end stone to Primal End). If changed accidentally, place it back on non-habitat blocks like grass or glass to revert it to a normal End Dragon egg.
+* See the [Habitat Blocks Reference](https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/tree/mc/1.20-updates/src/generated/resources/data/dragonmounts/tags/blocks) for details.
 
+#### Q: I am creating a custom breed via datapack and want to set its breath type. How do I do that?
+**A:** Include the breath string in your breed's name. For example, a breed named `"mutant_sculk"` will automatically use sculk breath.
+* **Available breath strings:** `fire` (default), `ice`, `storm`, `wither`, `end`, `sculk`, `blue_fire`, `black_fire` (e.g., `"x_ice"`, `"ice_x"`).
+* You can edit language files to display a clean name in-game while maintaining string detection.
 
-- When ridden, dragons can shoot fireballs via keybind (default: G)
+#### Q: I switched from base Dragon Mounts Legacy to this mod and attributes (HP, flight speed, armor) are not updating correctly. Why?
+**A:** Previous versions preserve entity attributes in existing worlds. New attribute values apply only to newly hatched dragons or updated versions. It is recommended to update to the latest version and hatch new dragons (existing dragons will remain as "Legacy" dragons).
 
+---
 
-- Dragons can be dual ridden by players
--- The owner is the only one that can control the dragon
--- The owner is the only one that can activate the fireball breath via keybind
--- When the owner dismounts, dies, or disconnects, the 2nd passenger will be forcefully dismounted as well
-
-- Dragons can now be given armor via Copper, Iron, Gold, Emerald, Diamond, and Netherite blocks. Each provide a different armor value. Armor can be retrieved via shear like the saddle. If given another block while wearing armor, the armor will swap and the player will get the previous armor's block back.
-
-- Added Chest Mechanics. Players can give dragons a chest and they can access them via keybind (default: H) whenever they are riding them or looking at them (vanilla interaction range). Chest can be retrieved via shear like the saddle. If the dragon dies or the chest is sheared away from the dragon, the contents drop to the ground.
-
-- Added Wander Mode. In this state, the dragon will be anchored in an area. The area size is configurable. To set your dragon to wander mode, simply shift right click (like how you make them sit or follow). There would be a text indicating which mode they are currently on (this also shows when dismounting). The modes will cycle into these three: sit, follow, and wander. When you ride the dragon upon setting them to follow or wander, upon dismounting, they will retain that mode. However, when the dragon is in sit mode and you ride and dismount, they will be in a 4th mode (neutral mode, they don't go back to sitting).
-
-- New Dragon textures and Dragon Types!
-
-- Updated the textures of some of the original dragons.
-
-- Added the Storm Dragon, lower armor with slightly fast movement speed, flight speed, melee damage, and is immune to lightning bolt damage. Can be hatched when surrounded by copper blocks. It has the electro step ability that cleans weathered copper.
-
-- Added the Blue Fire Dragon. Can be hatched via obsidian. It breathes blue fire (cosmetic change from normal fire breath).
-
-- Added the Terra Dragon. They have increased HP and armor and are immune to stalagmite and stalactite. Can be hatched via andesite, granite, diorite, and terracotta blocks.
-
-- Added the Zombie Dragon. They have less armor and HP but they have drowning, suffocation, poison and magic immunity. Can be hatched via bone blocks. It has the Putrid Step ability which occasionally:
--- Turn grass blocks into Moss or Mycelium or course dirt
--- Place dead bushes in sandy terrain 
--- Place mushrooms
-
-- Added the Solar Dragon. Immune to withering. Can be hatched via gold blocks.
-
-- Added the Lunar Dragon. Immune to withering. Can be hatched via crying obsidian.
-
-- Added the Aurora Dragon. Immune to freezing. Can be hatched via purpur blocks.
-
-- Added the Magic Dragon. Immune to magic. Shoots ender breath balls. Can be hatched via enchantment table blocks.
-
-- Added the Crystal Dragon. They have increased HP and armor and are immune to stalagmite and stalactite. Can be hatched via amethyst blocks.
-
-- Added the Bronze Dragon. They are the same as Storm Dragons. Can be hatched via redstone lamps.
-
-- Soul Fire-able blocks can no longer hatch the Nether Dragon, it will instead hatch the new variant: Soul Nether Dragon (cosmetic change only). They can be hatched by blocks that can emit soul fire.
-
-- Prismarine and Sea Lantern can no longer hatch the Water dragon, it will instead hatch the new variant: Ocean Dragon (cosmetic change only).
-
-- Added the Wither Dragon. They are immune to withering but has slightly low hp. They can shoot wither skulls which inflict wither. Can be hatched via wither skeleton skulls. They have the wither step ability that spawns wither roses and soul soil occasionally on the blocks they walk on.
-
-- Added the Gale Dragon. They are very similar to Aether Dragons. Can be hatched via blue terracotta blocks
-
-- Added the Sculk Dragon. Immune to in wall damage and sonicboom. Can be hatched via sculk blocks. Shoots Sonic Boom breaths. Has the sculk step ability which spreads sculk.
-
-- Added the Primal End Dragon. Can be hatched via endstone
-
-- Added the Primal Nether Dragon can be hatched via red terracotta blocks
-
-- Added fish items to items that can heal dragons (I found it weird that you can tame them with fish but you can only heal them with meat).
-
-- Aether Dragons can be hatched via glowstone blocks now
-
-- Added the Eclipse Dragon. Can be hatched via yellow terracotta blocks
-
-- Added the Dark Dragon. Can be hatched via black terracotta blocks. Shoots wither breath balls. Immune to lightning bolts and freezing.
-
-- Added the Black Fire Dragon. Can be hatched via black concrete. It breathes black fire (cosmetic change from normal fire breath).
-
-- Added the Sylphid Dragon. It is immune to drowning and has slightly faster flight speed. Can be hatched via light blue terracotta.
-
-- Added the Monarch Dragon. It has increased HP, armor, and damage, but it is susceptible to minecraft's dragon breath damage. Can be hatched via red glazed terracotta.
-
-- Added the Jade Dragon. It has high armor, armor toughness but reduced HP. It also has slightly faster movement speed. Can be hatched via emerald blocks. It has the jade step ability that can occasionally turn stone or deepslate to emerald ore.
-
-- Added the Red Dragon. It has slightly higher HP. Can be hatched via red concrete.
-
-- Added the Elder Dragon. It is similar to the Monarch Dragon but breaths blue fire. Can be hatched via gray terracotta.
-
-- Added the Shadow Dragon. It is similar to the Monarch Dragon but breaths black fire. Can be hatched via black glazed terracotta.
-
-- Added the Light Dragon. Shoots storm breath balls. Immune to lightning bolts and freezing. Can be hatched via white terracotta.
-
-- Added the Blood Dragon. It is similar to the Monarch Dragon as well. Can be hatched via redstone.
-
-- Hotfeet ability can turn wet sponge to sponge and blackstone to magma block now (inverse of Hydrostep)
-
-- Dragon variants' attribute tweaks
--- All dragons are fire immune
--- All dragons have increased health and armor
--- All dragons have natural regeneration
--- End Dragons and Water Dragons have their HP increased
--- Ice Dragons and Fire Dragons have their damage increased
--- Forest Dragons have increased movement speed
--- Aether Dragons are unchanged since their +flight speed attribute is enough as it is
--- Nether Dragons are also unchanged since their default +armor is enough as it is
--- Ghost Dragons have less HP but has armor toughness and immunity to arrows
-
-- Dragon breath (fire) now sets entities on fire when it hits them directly if they are not fire immune and are in the explosion radius. 
--- It will also ensure that it has damage and sets things on fire more consistently. 
--- It respects doFireTick and mobGriefing gamerules. 
--- It now lights up blocks that can be lit like candles, campfires, redstone lamps, smokers, furnaces, blast furnaces, and tnt. If a modded block has the "LIT" blockstate, that will get lit as well.
--- If the block (vanilla or modded) has the minecraft tag SOUL_FIRE_BASE_BLOCKS, it will set that to soul fire instead.
--- It expires immediately if it hits water, it cannot go through water except the black fire breath.
-
-- Dragon breath (ice) will apply the freeze effect to mobs if they are not freeze immune. It also has a chance of summoning a snow field that slows and gives mining fatigue to mobs upon explosion or impact. It will put fire out on block surfaces (fire extinguisher style) and unlight lit blocks like (campfires, candles, lamps, etc.). When it hits water, it will turn it to ice. When it hits lava, it will turn it to cobblestone or obsidian.
-
-- Dragon breath (end) has a chance of summoning a harming cloud upon explosion or impact.
-
-- Dragon breath (storm) has a chance of summoning lightning upon explosion or impact and a lightning field that stuns mobs that come into contact with it. It gives redstone signals when it hits lightning rods and can clean copper. It can also transform mobs like creepers into charged creepers, pigs into zombie piglins, etc.
-
-- Dragon breath (wither) inflicts withering on entities caught in the radius. Places wither roses on victims. The explosion respects minecraft griefing rules.
-
-- Dragon breath (sculk) inflicts darkness and knockback on entities caught in a larger radius compared to other breaths. It also triggers a sound event so it triggers sculk sensors and other stuff relying on it.
-
-- Updated JP and UK translations.
-
-
-- Added Chinese, Russian, Spanish, French, Portuguese (South American and European) translation.
-
-- Tweaked dragon tails of Nether, Water, Ghost, and Forest dragons.
-
-
-- Added configs for dragon breaths.
-
-Huge thanks to the Dragon Mounts 2 team for allowing me to use the updated textures for dragons!
-
-Dragon Mounts Discord: https://discord.gg/Ewm8aTTJ3K
-
-Please checkout https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-2 made by the Dragon Mounts 2 team if you want to play in 1.12.2 !
-
-FAQs:
-
-Q: How do I get dragons/dragon eggs?
-A: There's two ways. OPTION ONE: is by killing the Ender Dragon again by respawning it, then you can transform the egg to what variant you like. In the config, the dragon egg will always spawn at the dragon fountain unless a mod is conflicting with it. OPTION TWO: is by chests like the original mod but this is disabled by default. If you want dragon eggs to spawn in some chests in structures, you need to enable them in the configs ("use_loot_tables = true") first then restart the game. The new variants of dragon eggs will share the spawn weight of the base dragons. For example, if you ramp up the spawn weight of aether dragons, the gale dragon will also have a high chance to spawn and if you ramp up the spawn weight of the fire dragon, the blue fire dragon will follow. See https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/blob/mc/1.20-updates/src/generated/resources/data/forge/loot_modifiers/global_loot_modifiers.json for more information.
-
-Q: I can't open my dragon's inventory, why is this happening?
-A: Your keybind might have conflicts with other mods. You can change the keybind of the dragon inventory to amend this.
-
-Q: My game is crashing. What could be the problem?
-A: You could be playing with the Dragon Mounts Patches mod which is incompatible with this mod from version 9983 onwards since its fixes has been incorporated to the base mod. If that is not the cause, you can comment your crashlog via textfile in the comments section or the github issues page. Without a crashlog, I cannot help you.
-
-Q: How do I get a normal end dragon?
-A: You can hatch the egg anywhere near blocks that cannot change its variant like grass or glass blocks. Be careful with this since if you hatch them with other dragons' habitat blocks, they will change (Example: magma blocks will turn them to fire dragon egg, water source or flowing will turn them to water dragon egg, end stone will turn them to primal dragon egg, etc. Not to worry though, you can simply turn them back to normal end dragon egg via placing them on non-habitat blocks like grass or glass.) See https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/tree/mc/1.20-updates/src/generated/resources/data/dragonmounts/tags/blocks for the habitat blocks references.
-
-Q: I am creating a new custom breed via datapack and I want to set the breath type of my dragon, how do I do that?
-A: What you can do is name your breeds to accommodate the breed detection I have for the breath system. if you want a dragon to breathe sculk breaths, it needs to have the "sculk" string in its breed name.
-For example: "mutant_sculk"
-That dragon will breathe sculk breath. 
-The string names are: fire (default), ice, storm, wither,  end, sculk, blue_fire, black_fire
-Like "x_ice ", "ice_x", etc.
-You can always edit the language files so that the dragon is still properly named in the game.
-
-Q: I switched from the base Dragon Mounts Legacy mod to this one and my dragon's attributes are not reflecting correctly, like the HP, flight speed, and armor values are not the same with other dragons. What could be the cause?
-A: Previous versions preserve the attribute of dragons in existing worlds. The new attributes would only reflect when you use the later versions of the mod or when hatching new dragons. I suggest you update to the latest version and hatch some new dragons. Consider your old dragons "Legacy" dragons.
-
-=== DO NOT DOWNLOAD FROM OTHER WEBSITES, I ONLY UPLOADED THIS TO CURSEFORGE ===
+> **WARNING:** DO NOT DOWNLOAD FROM OTHER WEBSITES. THIS MOD IS ONLY OFFICIALLY UPLOADED TO CURSEFORGE.
 
 
 ![Logo](logo-banner.png)
