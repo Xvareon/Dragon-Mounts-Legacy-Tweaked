@@ -11,7 +11,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 ## TWEAKS
 
 * **New Dragon Breaths!** Besides Fire, there are Ice, Storm, Wither, Sculk, and Ender Breaths now corresponding to appropriate dragon breeds.
-* **Combat AI:** Dragons now shoot breath balls when in combat.
+* **Combat AI:** Dragons now shoot breath balls when in combat. They still use melee when in close range.
 * **Keybind Attack:** When ridden, dragons can shoot fireballs via keybind (default: `G`).
 * **Dual Riding:** Dragons can be dual ridden by players.
     * The owner is the only one that can control the dragon.
@@ -24,6 +24,22 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
     * However, when the dragon is in sit mode and you ride and dismount, they will be in a 4th mode (neutral mode, they don't go back to sitting).
 * **New Dragon Textures and Dragon Types!**
 * Updated the textures of some of the original dragons.
+
+### Additional Adjustments
+
+* **Healing Items:** Added fish items to items that can heal dragons.
+* **Aether Dragons:** Can now be hatched via glowstone blocks.
+* **Hotfeet Ability:** Can now turn wet sponges into sponges and blackstone into magma blocks (inverse of *Hydrostep*).
+* **Dragon Variant Attribute Tweaks:**
+    * All dragons are fire immune.
+    * All dragons have increased health and armor.
+    * All dragons have natural regeneration.
+    * End Dragons and Water Dragons have increased HP.
+    * Ice Dragons and Fire Dragons have increased damage.
+    * Forest Dragons have increased movement speed.
+    * Aether Dragons are unchanged (their `+flight speed` attribute is sufficient).
+    * Nether Dragons are unchanged (their default `+armor` is sufficient).
+    * Ghost Dragons have less HP, but gain armor toughness and arrow immunity.
 
 ### New Dragon Breaths & Breeds
 
@@ -58,22 +74,6 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 * **Shadow Dragon:** Similar to the Monarch Dragon, but breathes black fire. Can be hatched via black glazed terracotta.
 * **Light Dragon:** Shoots storm breath balls. Immune to lightning bolts and freezing. Can be hatched via white terracotta.
 * **Blood Dragon:** Similar to the Monarch Dragon. Can be hatched via redstone.
-
-### Additional Adjustments
-
-* **Healing Items:** Added fish items to items that can heal dragons.
-* **Aether Dragons:** Can now be hatched via glowstone blocks.
-* **Hotfeet Ability:** Can now turn wet sponges into sponges and blackstone into magma blocks (inverse of *Hydrostep*).
-* **Dragon Variant Attribute Tweaks:**
-    * All dragons are fire immune.
-    * All dragons have increased health and armor.
-    * All dragons have natural regeneration.
-    * End Dragons and Water Dragons have increased HP.
-    * Ice Dragons and Fire Dragons have increased damage.
-    * Forest Dragons have increased movement speed.
-    * Aether Dragons are unchanged (their `+flight speed` attribute is sufficient).
-    * Nether Dragons are unchanged (their default `+armor` is sufficient).
-    * Ghost Dragons have less HP, but gain armor toughness and arrow immunity.
 
 ### Dragon Breath Mechanics
 
