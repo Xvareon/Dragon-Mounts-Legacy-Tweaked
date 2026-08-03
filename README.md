@@ -27,7 +27,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 
 ### Additional Adjustments
 
-* **Healing Items:** Added fish items to items that can heal dragons.
+* **Healing:** Vanilla and Modded fish items can now heal dragons which previously cannot.
 * **Aether Dragons:** Can now be hatched via glowstone blocks.
 * **Hotfeet Ability:** Can now turn wet sponges into sponges and blackstone into magma blocks (inverse of *Hydrostep*).
 * **Dragon Variant Attribute Tweaks:**
@@ -118,10 +118,6 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 
 #### Q: My game is crashing. What could be the problem?
 **A:** You may be running *Dragon Mounts Patches*, which is incompatible with this mod from version 9983 onwards (its fixes are already integrated). If that is not the cause, attach your crash log via text file in the comments or GitHub issues page. **Without a crash log, troubleshooting is not possible.**
-
-#### Q: How do I get a normal End Dragon?
-**A:** Hatch the egg near neutral blocks that do not trigger a variant (e.g., grass or glass blocks). Be careful: placing the egg near habitat blocks will change its type (e.g., magma blocks turn it to Fire, water sources to Water, end stone to Primal End). If changed accidentally, place it back on non-habitat blocks like grass or glass to revert it to a normal End Dragon egg.
-* See the [Habitat Blocks Reference](https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/tree/mc/1.20-updates/src/generated/resources/data/dragonmounts/tags/blocks) for details.
 
 #### Q: Is this compatible with DML's addons?
 **A:** Probably not. You can test it though. Some bugs might occur.
