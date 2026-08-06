@@ -4,7 +4,7 @@ MOD LINK: [Dragon Mounts Legacy Tweaked](https://www.curseforge.com/minecraft/mc
 
 > **NOTICE:** This is a fork of Dragon Mounts: Legacy by Kay9Unit. For the original mod please go to their page. All credits go to them and their contributors, but **do not report bugs caused by this fork to them!** Report it to me instead.
 
-This mod is incompatible with *Dragon Mounts Patches* since it incorporated the issues that *Dragon Mounts Patches* fixes. The mixins will be incompatible with the base code. This is also incompatible with the original *Dragon Mounts Legacy* mod as this is a standalone mod, be advised.
+This mod is incompatible with *Dragon Mounts Patches* since it incorporated the issues that *Dragon Mounts Patches* fixes. The mixins will be incompatible with the base code. This is also incompatible with the original *Dragon Mounts Legacy* mod as this is a standalone mod (I think the addons too), be advised.
 
 ---
 
@@ -18,7 +18,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
     * The owner is the only one that can activate the fireball breath via keybind.
     * When the owner dismounts, dies, or disconnects, the 2nd passenger will be forcefully dismounted as well.
 * **Armor Mechanics:** Dragons can now be given armor via Copper, Iron, Gold, Emerald, Diamond, and Netherite blocks. Each provides a different armor value. Armor can be retrieved via shears like the saddle. If given another block while wearing armor, the armor will swap and the player will get the previous armor's block back.
-* **Chest Mechanics:** Players can give dragons a chest and access them via keybind (default: `H`) whenever they are riding them or looking at them (vanilla interaction range). Chests can be retrieved via shears like the saddle. If the dragon dies or the chest is sheared away from the dragon, the contents drop to the ground.
+* **Chest Mechanics:** Players can give dragons a chest and access them via keybind (default: `H`) whenever they are riding them or looking at them (vanilla interaction range). Chests can be retrieved via shears like the saddle. If the dragon dies or the chest is sheared away from the dragon, the contents drop to the ground. If the dragon is chested, you will see a texture near their rear.
 * **Wander Mode:** In this state, the dragon will be anchored in an area. The area size is configurable. To set your dragon to wander mode, simply Shift + Right-Click (like how you make them sit or follow). There will be text indicating which mode they are currently in (this also shows when dismounting). The modes cycle through three states: **sit**, **follow**, and **wander**.
     * When you ride the dragon upon setting them to follow or wander, they will retain that mode upon dismounting.
     * However, when the dragon is in sit mode and you ride and dismount, they will be in a 4th mode (neutral mode, they don't go back to sitting).
@@ -85,7 +85,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
     * Expires immediately upon touching water and cannot pass through water (except for Black Fire breath).
 * **Ice Breath:** Applies the freeze effect to mobs not immune to freezing. Has a chance to summon a snowfield upon impact/explosion that slows and applies Mining Fatigue to mobs. Extinguishes surface fires and unlights blocks (campfires, candles, lamps, etc.). Turns water into ice and lava into cobblestone/obsidian.
 * **End Breath:** Has a chance of summoning a harming cloud upon impact/explosion.
-* **Storm Breath:** Has a chance of summoning lightning upon impact/explosion and a lightning field that stuns contacting mobs. Emits redstone signals when hitting lightning rods and cleans copper. Can transform mobs (e.g., creepers into charged creepers, pigs into zombie piglins).
+* **Storm Breath:** Has a chance of summoning lightning upon impact/explosion and a lightning field that stuns (Applies a high level of slowness) contacting mobs. Emits redstone signals when hitting lightning rods and cleans copper. Can transform mobs (e.g., creepers into charged creepers, pigs into zombie piglins, villagers to witches).
 * **Wither Breath:** Inflicts withering on entities in the radius and places wither roses on victims. Respects Minecraft griefing rules.
 * **Sculk Breath:** Inflicts darkness and knockback over a larger radius compared to other breaths. Triggers a sound event to activate sculk sensors.
 
