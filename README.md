@@ -2,7 +2,7 @@
 
 MOD LINK: [Dragon Mounts Legacy Tweaked](https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-legacy-tweaked)
 
-> **NOTICE:** This is a fork of Dragon Mounts: Legacy by Kay9Unit. For the original mod please go to their page. All credits go to them and their contributors, but **do not report bugs caused by this fork to them!** Report it to me instead.
+> **NOTICE:** This is a fork of [Dragon Mounts: Legacy by Kay9Unit](https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-legacy). For the original mod please go to their page. All credits go to them and their contributors, but **do not report bugs caused by this fork to them!** Report it to me instead.
 
 This mod is incompatible with *Dragon Mounts Patches* since it incorporated the issues that *Dragon Mounts Patches* fixes. The mixins will be incompatible with the base code. This is also incompatible with the original *Dragon Mounts Legacy* mod as this is a standalone mod (I think the addons too), be advised.
 
