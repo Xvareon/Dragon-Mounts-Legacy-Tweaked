@@ -145,6 +145,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.blood": "Blutdrache-Spawn-Ei",
   "block.dragonmounts.dragon_egg.dragonmounts.blood": "Blutdrachenei",
 
+  "dragon_breed.dragonmounts.sift": "Siebdrache",
+  "item.dragonmounts.spawn_egg.dragonmounts.sift": "Siebdrachen-Sumpf-Ei",
+  "block.dragonmounts.dragon_egg.dragonmounts.sift": "Siebdrachen-Ei",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Schlüpft in %s Sekunden.",
   "block.dragonmounts.dragon_egg.desc1": "Interaktion mit Drache:",
   "block.dragonmounts.dragon_egg.desc2": "Ändert die Drachenart",

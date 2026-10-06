@@ -145,6 +145,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.blood": "Яйцо призыва кровавого дракона",
   "block.dragonmounts.dragon_egg.dragonmounts.blood": "Яйцо кровавого дракона",
 
+  "dragon_breed.dragonmounts.sift": "Просеивающий дракон",
+  "item.dragonmounts.spawn_egg.dragonmounts.sift": "Яйцо призыва просеивающего дракона",
+  "block.dragonmounts.dragon_egg.dragonmounts.sift": "Яйцо просеивающего дракона",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Вылупится через %s сек.",
   "block.dragonmounts.dragon_egg.desc1": "Взаимодействие с драконом:",
   "block.dragonmounts.dragon_egg.desc2": "Изменяет породу дракона",

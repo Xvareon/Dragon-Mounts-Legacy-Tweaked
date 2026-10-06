@@ -65,7 +65,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 * **Primal Nether Dragon:** Can be hatched via red terracotta blocks.
 * **Eclipse Dragon:** Can be hatched via yellow terracotta blocks.
 * **Dark Dragon:** Can be hatched via black terracotta blocks. Shoots wither breath balls. Immune to lightning bolts and freezing.
-* **Black Fire Dragon:** Can be hatched via black concrete. It breathes black fire (cosmetic change from normal fire breath).
+* **Black Fire Dragon:** Can be hatched via black concrete. It breathes black fire.
 * **Sylphid Dragon:** Immune to drowning, slightly faster flight speed. Can be hatched via light blue terracotta.
 * **Monarch Dragon:** Increased HP, armor, and damage, but susceptible to Minecraft's dragon breath damage. Can be hatched via red glazed terracotta.
 * **Jade Dragon:** High armor and armor toughness, reduced HP, slightly faster movement speed. Can be hatched via emerald blocks. Has the *Jade Step* ability that occasionally turns stone or deepslate into emerald ore.
@@ -74,6 +74,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 * **Shadow Dragon:** Similar to the Monarch Dragon, but breathes black fire. Can be hatched via black glazed terracotta.
 * **Light Dragon:** Shoots storm breath balls. Immune to lightning bolts and freezing. Can be hatched via white terracotta.
 * **Blood Dragon:** Similar to the Monarch Dragon. Can be hatched via redstone.
+* **Sift Dragon:** Immune to in-wall damage and sonic booms like the Sculk Dragon, also shoots sonic boom breaths. Can be hatched via pink glazed terracotta.
 
 ### Dragon Breath Mechanics
 
@@ -114,7 +115,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 * See the [Global Loot Modifiers Reference](https://github.com/Xvareon/Dragon-Mounts-Legacy-Tweaked/blob/mc/1.20-updates/src/generated/resources/data/forge/loot_modifiers/global_loot_modifiers.json) for details.
 
 #### Q: I can't open my dragon's inventory. Why is this happening?
-**A:** Your keybind might conflict with another mod. Change the dragon inventory keybind in controls to resolve this.
+**A:** Your keybind might conflict with another mod. Change the dragon inventory keybind in controls to resolve this. You should also check if you have put a chest on your dragon, you need to do that.
 
 #### Q: My game is crashing. What could be the problem?
 **A:** You may be running *Dragon Mounts Patches*, which is incompatible with this mod from version 9983 onwards (its fixes are already integrated). If that is not the cause, attach your crash log via text file in the comments or GitHub issues page. **Without a crash log, troubleshooting is not possible.**

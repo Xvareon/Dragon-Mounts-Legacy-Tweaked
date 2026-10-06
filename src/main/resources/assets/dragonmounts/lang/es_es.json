@@ -145,6 +145,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.blood": "Huevo de Invocación de Dragón de Sangre",
   "block.dragonmounts.dragon_egg.dragonmounts.blood": "Huevo de Dragón de Sangre",
 
+  "dragon_breed.dragonmounts.sift": "Dragón de Tamiz",
+  "item.dragonmounts.spawn_egg.dragonmounts.sift": "Huevo generador de Dragón de Tamiz",
+  "block.dragonmounts.dragon_egg.dragonmounts.sift": "Huevo de Dragón de Tamiz",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Eclosiona en %s segundos.",
   "block.dragonmounts.dragon_egg.desc1": "Interactuar con el dragón:",
   "block.dragonmounts.dragon_egg.desc2": "Cambia el tipo de raza",
