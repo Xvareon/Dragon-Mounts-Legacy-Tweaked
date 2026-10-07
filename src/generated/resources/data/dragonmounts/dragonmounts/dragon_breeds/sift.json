@@ -19,7 +19,7 @@
     "minecraft:dragon_breath",
     "minecraft:in_wall"
   ],
-  "primary_color": "A1344C",
+  "primary_color": "C7425B",
   "reproduction_limit": "config:end",
   "secondary_color": "CEEFFF"
 }
