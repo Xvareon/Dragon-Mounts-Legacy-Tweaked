@@ -149,6 +149,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.sift": "Sift Dragon Spawn Egg",
   "block.dragonmounts.dragon_egg.dragonmounts.sift": "Sift Dragon Egg",
 
+  "dragon_breed.dragonmounts.frost": "Frost Dragon",
+  "item.dragonmounts.spawn_egg.dragonmounts.frost": "Frost Dragon Spawn Egg",
+  "block.dragonmounts.dragon_egg.dragonmounts.frost": "Frost Dragon Egg",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Hatches in %s seconds.",
   "block.dragonmounts.dragon_egg.desc1": "Interact With Dragon:",
   "block.dragonmounts.dragon_egg.desc2": "Changes Breed Type",

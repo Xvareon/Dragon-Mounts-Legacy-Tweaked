@@ -1876,6 +1876,7 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
         ResourceLocation breedId = getBreed().id(level().registryAccess());
 
         return  breedId.getPath().contains("ice") ||
+                breedId.getPath().contains("frost") ||
                 breedId.getPath().contains("water") ||
                 breedId.getPath().contains("ocean") ||
                 breedId.getPath().contains("aether") ||

@@ -36,7 +36,8 @@
     "dragonmounts:dragonmounts/light/chests/jungle_temple",
     "dragonmounts:dragonmounts/shadow/chests/abandoned_mineshaft",
     "dragonmounts:dragonmounts/blood/chests/igloo_chest",
-    "dragonmounts:dragonmounts/sift/chests/abandoned_mineshaft"
+    "dragonmounts:dragonmounts/sift/chests/abandoned_mineshaft",
+    "dragonmounts:dragonmounts/frost/chests/igloo_chest"
   ],
   "replace": false
 }

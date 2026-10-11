@@ -149,6 +149,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.sift": "Ovo Gerador de Dragão da Peneira",
   "block.dragonmounts.dragon_egg.dragonmounts.sift": "Ovo de Dragão da Peneira",
 
+  "dragon_breed.dragonmounts.frost": "Dragão de Gelo",
+  "item.dragonmounts.spawn_egg.dragonmounts.frost": "Ovo Gerador de Dragão de Gelo",
+  "block.dragonmounts.dragon_egg.dragonmounts.frost": "Ovo de Dragão de Gelo",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Choca em %s segundos.",
   "block.dragonmounts.dragon_egg.desc1": "Interagir com o Dragão:",
   "block.dragonmounts.dragon_egg.desc2": "Altera a Raça do Dragão",

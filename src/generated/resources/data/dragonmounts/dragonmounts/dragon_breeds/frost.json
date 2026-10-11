@@ -1,0 +1,37 @@
+{
+  "attributes": {
+    "minecraft:generic.max_health": 100.0,
+    "minecraft:generic.armor": 8.0,
+    "minecraft:generic.attack_damage": 10.0
+  },
+  "abilities": [
+    {
+      "type": "dragonmounts:frost_walker",
+      "radius_multiplier": 3.0
+    },
+    {
+      "type": "dragonmounts:snow_stepper"
+    }
+  ],
+  "habitats": [
+    {
+      "type": "dragonmounts:nearby_blocks",
+      "block_tag": "dragonmounts:frost_dragon_habitat_blocks"
+    }
+  ],
+  "hatch_particles": {
+    "type": "minecraft:snowflake"
+  },
+  "immunities": [
+    "minecraft:on_fire",
+    "minecraft:in_fire",
+    "minecraft:drown",
+    "minecraft:freeze",
+    "minecraft:cactus",
+    "minecraft:sweet_berry_bush",
+    "minecraft:dragon_breath"
+  ],
+  "primary_color": "2B323D",
+  "reproduction_limit": "config:ice",
+  "secondary_color": "BCE8FF"
+}
