@@ -178,5 +178,11 @@
   "commands.dragon.follow": "El dragón te está siguiendo",
   "commands.dragon.sit": "El dragón está sentado",
   "commands.dragon.wander": "El dragón está deambulando por la posición atual",
-  "commands.dragon.standby": "El dragón está en espera"
+  "commands.dragon.standby": "El dragón está en espera",
+
+  "entity.dragonmounts.black_fire_breath": "Aliento de fuego negro",
+  "entity.dragonmounts.blue_fire_breath": "Aliento de fuego azul",
+  "entity.dragonmounts.storm_breath": "Aliento de tormenta",
+  "entity.dragonmounts.ice_breath": "Aliento de hielo",
+  "entity.dragonmounts.sculk_breath": "Aliento de sculk"
 }

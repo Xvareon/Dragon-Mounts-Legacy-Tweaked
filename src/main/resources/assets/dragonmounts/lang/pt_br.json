@@ -178,5 +178,11 @@
   "commands.dragon.follow": "O dragão está seguindo",
   "commands.dragon.sit": "O dragão está sentado",
   "commands.dragon.wander": "O dragão está perambulando pela posição atual",
-  "commands.dragon.standby": "O dragão está em espera"
+  "commands.dragon.standby": "O dragão está em espera",
+
+  "entity.dragonmounts.black_fire_breath": "Sopro de Fogo Negro",
+  "entity.dragonmounts.blue_fire_breath": "Sopro de Fogo Azul",
+  "entity.dragonmounts.storm_breath": "Sopro da Tempestade",
+  "entity.dragonmounts.ice_breath": "Sopro de Gelo",
+  "entity.dragonmounts.sculk_breath": "Sopro de Sculk"
 }

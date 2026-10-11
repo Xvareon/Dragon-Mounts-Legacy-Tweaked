@@ -178,5 +178,11 @@
   "commands.dragon.follow": "Дракон іде слідом",
   "commands.dragon.sit": "Дракон сидить",
   "commands.dragon.wander": "Дракон блукає навколо поточної позиції",
-  "commands.dragon.standby": "Дракон у режимі очікування"
+  "commands.dragon.standby": "Дракон у режимі очікування",
+
+  "entity.dragonmounts.black_fire_breath": "Подих чорного вогню",
+  "entity.dragonmounts.blue_fire_breath": "Подих синього вогню",
+  "entity.dragonmounts.storm_breath": "Подих шторму",
+  "entity.dragonmounts.ice_breath": "Lядовий подих",
+  "entity.dragonmounts.sculk_breath": "Подих скалку"
 }

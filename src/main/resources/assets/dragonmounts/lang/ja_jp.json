@@ -178,5 +178,11 @@
   "commands.dragon.follow": "ドラゴンがついてきています",
   "commands.dragon.sit": "ドラゴンがお座りしています",
   "commands.dragon.wander": "ドラゴンが現在の位置を徘徊しています",
-  "commands.dragon.standby": "ドラゴンが待機しています"
+  "commands.dragon.standby": "ドラゴンが待機しています",
+
+  "entity.dragonmounts.black_fire_breath": "黒炎のブレス",
+  "entity.dragonmounts.blue_fire_breath": "青炎のブレス",
+  "entity.dragonmounts.storm_breath": "嵐のブレス",
+  "entity.dragonmounts.ice_breath": "氷のブレス",
+  "entity.dragonmounts.sculk_breath": "スカルクのブレス"
 }

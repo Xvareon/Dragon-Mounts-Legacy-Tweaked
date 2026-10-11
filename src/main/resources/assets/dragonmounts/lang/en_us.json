@@ -178,5 +178,11 @@
   "commands.dragon.follow": "Dragon is following",
   "commands.dragon.sit": "Dragon is sitting",
   "commands.dragon.wander": "Dragon is wandering around the current position",
-  "commands.dragon.standby": "Dragon is standing by"
+  "commands.dragon.standby": "Dragon is standing by",
+
+  "entity.dragonmounts.black_fire_breath": "Black Fire Breath",
+  "entity.dragonmounts.blue_fire_breath": "Blue Fire Breath",
+  "entity.dragonmounts.storm_breath": "Storm Breath",
+  "entity.dragonmounts.ice_breath": "Ice Breath",
+  "entity.dragonmounts.sculk_breath": "Sculk Breath"
 }

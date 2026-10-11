@@ -178,5 +178,11 @@
   "commands.dragon.follow": "Drache folgt nun",
   "commands.dragon.sit": "Drache sitzt nun",
   "commands.dragon.wander": "Drache streift um die aktuelle Position herum",
-  "commands.dragon.standby": "Drache ist in Bereitschaft"
+  "commands.dragon.standby": "Drache ist in Bereitschaft",
+
+  "entity.dragonmounts.black_fire_breath": "Schwarzfeueratem",
+  "entity.dragonmounts.blue_fire_breath": "Blaufeueratem",
+  "entity.dragonmounts.storm_breath": "Sturmatem",
+  "entity.dragonmounts.ice_breath": "Eisatem",
+  "entity.dragonmounts.sculk_breath": "Sculkatem"
 }

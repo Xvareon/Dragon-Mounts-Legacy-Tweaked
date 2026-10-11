@@ -178,5 +178,11 @@
   "commands.dragon.follow": "Дракон следует за вами",
   "commands.dragon.sit": "Дракон сидит",
   "commands.dragon.wander": "Дракон бродит вокруг текущей позиции",
-  "commands.dragon.standby": "Дракон находится в режиме ожидания"
+  "commands.dragon.standby": "Дракон находится в режиме ожидания",
+
+  "entity.dragonmounts.black_fire_breath": "Дыхание черного огня",
+  "entity.dragonmounts.blue_fire_breath": "Дыхание синего огня",
+  "entity.dragonmounts.storm_breath": "Дыхание шторма",
+  "entity.dragonmounts.ice_breath": "Ледяное дыхание",
+  "entity.dragonmounts.sculk_breath": "Дыхание скалка"
 }

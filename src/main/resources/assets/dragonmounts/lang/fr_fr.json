@@ -178,5 +178,11 @@
   "commands.dragon.follow": "Le dragon vous suit",
   "commands.dragon.sit": "Le dragon est assis",
   "commands.dragon.wander": "Le dragon erre autour de la position actuelle",
-  "commands.dragon.standby": "Le dragon est en attente"
+  "commands.dragon.standby": "Le dragon est en attente",
+
+  "entity.dragonmounts.black_fire_breath": "Souffle de feu noir",
+  "entity.dragonmounts.blue_fire_breath": "Souffle de feu bleu",
+  "entity.dragonmounts.storm_breath": "Souffle de tempête",
+  "entity.dragonmounts.ice_breath": "Souffle de glace",
+  "entity.dragonmounts.sculk_breath": "Souffle de sculk"
 }
