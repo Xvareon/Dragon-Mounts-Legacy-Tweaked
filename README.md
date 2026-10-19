@@ -77,6 +77,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 * **Sift Dragon:** Immune to in-wall damage and sonic booms like the Sculk Dragon, also shoots sonic boom breaths. Can be hatched via pink glazed terracotta.
 * **Frost Dragon:** Similar to the Ice Dragon. Can be hatched via light blue glazed terracotta.
 * **Black Ice Dragon:** Similar to the Ice Dragon. Can be hatched via light cyan glazed terracotta.
+* **Mecha Dragon:** Has stats similar to the Terra dragon but has immunity to freezing and withering. Shoots storm breath balls. Can be hatched via gray glazed terracotta.
 
 ### Dragon Breath Mechanics
 

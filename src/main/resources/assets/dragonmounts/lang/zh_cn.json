@@ -157,6 +157,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.black_ice": "黑冰龙刷怪蛋",
   "block.dragonmounts.dragon_egg.dragonmounts.black_ice": "黑冰龙蛋",
 
+  "dragon_breed.dragonmounts.mecha": "机甲龙",
+  "item.dragonmounts.spawn_egg.dragonmounts.mecha": "机甲龙刷怪蛋",
+  "block.dragonmounts.dragon_egg.dragonmounts.mecha": "机甲龙蛋",
+
   "block.dragonmounts.dragon_egg.remaining_time": "将在 %s 秒后孵化。",
   "block.dragonmounts.dragon_egg.desc1": "与龙互动：",
   "block.dragonmounts.dragon_egg.desc2": "改变龙的种类",

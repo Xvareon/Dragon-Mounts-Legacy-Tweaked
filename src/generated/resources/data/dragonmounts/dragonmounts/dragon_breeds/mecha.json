@@ -1,0 +1,29 @@
+{
+  "attributes": {
+    "minecraft:generic.max_health": 120.0,
+    "minecraft:generic.armor": 10.0
+  },
+  "habitats": [
+    {
+      "type": "dragonmounts:nearby_blocks",
+      "block_tag": "dragonmounts:mecha_dragon_habitat_blocks"
+    }
+  ],
+  "hatch_particles": {
+    "type": "minecraft:wax_on"
+  },
+  "immunities": [
+    "minecraft:freeze",
+    "minecraft:wither",
+    "minecraft:falling_stalactite",
+    "minecraft:stalagmite",
+    "minecraft:on_fire",
+    "minecraft:in_fire",
+    "minecraft:cactus",
+    "minecraft:sweet_berry_bush",
+    "minecraft:dragon_breath"
+  ],
+  "primary_color": "35383a",
+  "reproduction_limit": "config:forest",
+  "secondary_color": "75fb69"
+}

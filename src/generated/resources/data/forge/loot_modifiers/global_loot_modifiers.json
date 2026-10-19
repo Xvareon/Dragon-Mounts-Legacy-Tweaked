@@ -38,7 +38,8 @@
     "dragonmounts:dragonmounts/blood/chests/igloo_chest",
     "dragonmounts:dragonmounts/sift/chests/abandoned_mineshaft",
     "dragonmounts:dragonmounts/frost/chests/igloo_chest",
-    "dragonmounts:dragonmounts/black_ice/chests/igloo_chest"
+    "dragonmounts:dragonmounts/black_ice/chests/igloo_chest",
+    "dragonmounts:dragonmounts/mecha/chests/desert_pyramid"
   ],
   "replace": false
 }

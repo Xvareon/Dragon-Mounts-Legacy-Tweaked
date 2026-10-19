@@ -157,6 +157,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.black_ice": "Schwarzeisdrachen-Spawnegg",
   "block.dragonmounts.dragon_egg.dragonmounts.black_ice": "Schwarzeisdrachenei",
 
+  "dragon_breed.dragonmounts.mecha": "Mecha-Drache",
+  "item.dragonmounts.spawn_egg.dragonmounts.mecha": "Mecha-Drachen-Spawnegg",
+  "block.dragonmounts.dragon_egg.dragonmounts.mecha": "Mecha-Drachenei",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Schlüpft in %s Sekunden.",
   "block.dragonmounts.dragon_egg.desc1": "Interaktion mit Drache:",
   "block.dragonmounts.dragon_egg.desc2": "Ändert die Drachenart",

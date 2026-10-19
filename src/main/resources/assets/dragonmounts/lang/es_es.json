@@ -157,6 +157,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.black_ice": "Huevo generador de dragón de hielo negro",
   "block.dragonmounts.dragon_egg.dragonmounts.black_ice": "Huevo de dragón de hielo negro",
 
+  "dragon_breed.dragonmounts.mecha": "Meca-dragón",
+  "item.dragonmounts.spawn_egg.dragonmounts.mecha": "Huevo generador de meca-dragón",
+  "block.dragonmounts.dragon_egg.dragonmounts.mecha": "Huevo de meca-dragón",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Eclosiona en %s segundos.",
   "block.dragonmounts.dragon_egg.desc1": "Interactuar con el dragón:",
   "block.dragonmounts.dragon_egg.desc2": "Cambia el tipo de raza",

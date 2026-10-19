@@ -157,6 +157,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.black_ice": "Black Ice Dragon Spawn Egg",
   "block.dragonmounts.dragon_egg.dragonmounts.black_ice": "Black Ice Dragon Egg",
 
+  "dragon_breed.dragonmounts.mecha": "Mecha Dragon",
+  "item.dragonmounts.spawn_egg.dragonmounts.mecha": "Mecha Dragon Spawn Egg",
+  "block.dragonmounts.dragon_egg.dragonmounts.mecha": "Mecha Dragon Egg",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Hatches in %s seconds.",
   "block.dragonmounts.dragon_egg.desc1": "Interact With Dragon:",
   "block.dragonmounts.dragon_egg.desc2": "Changes Breed Type",

@@ -157,6 +157,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.black_ice": "Œuf d'apparition de dragon de glace noire",
   "block.dragonmounts.dragon_egg.dragonmounts.black_ice": "Œuf de dragon de glace noire",
 
+  "dragon_breed.dragonmounts.mecha": "Mecha-dragon",
+  "item.dragonmounts.spawn_egg.dragonmounts.mecha": "Œuf d'apparition de mecha-dragon",
+  "block.dragonmounts.dragon_egg.dragonmounts.mecha": "Œuf de mecha-dragon",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Éclôt dans %s secondes.",
   "block.dragonmounts.dragon_egg.desc1": "Interagir avec le dragon :",
   "block.dragonmounts.dragon_egg.desc2": "Changer la race du dragon",
