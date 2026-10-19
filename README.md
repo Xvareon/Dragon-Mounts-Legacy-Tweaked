@@ -76,6 +76,7 @@ This mod is incompatible with *Dragon Mounts Patches* since it incorporated the 
 * **Blood Dragon:** Similar to the Monarch Dragon. Can be hatched via redstone.
 * **Sift Dragon:** Immune to in-wall damage and sonic booms like the Sculk Dragon, also shoots sonic boom breaths. Can be hatched via pink glazed terracotta.
 * **Frost Dragon:** Similar to the Ice Dragon. Can be hatched via light blue glazed terracotta.
+* **Black Ice Dragon:** Similar to the Ice Dragon. Can be hatched via light cyan glazed terracotta.
 
 ### Dragon Breath Mechanics
 

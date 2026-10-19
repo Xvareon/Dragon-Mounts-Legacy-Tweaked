@@ -153,6 +153,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.frost": "Яйцо призыва морозного дракона",
   "block.dragonmounts.dragon_egg.dragonmounts.frost": "Яйцо морозного дракона",
 
+  "dragon_breed.dragonmounts.black_ice": "Дракон чёрного льда",
+  "item.dragonmounts.spawn_egg.dragonmounts.black_ice": "Яйцо призыва дракона чёрного льда",
+  "block.dragonmounts.dragon_egg.dragonmounts.black_ice": "Яйцо дракона чёрного льда",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Вылупится через %s сек.",
   "block.dragonmounts.dragon_egg.desc1": "Взаимодействие с драконом:",
   "block.dragonmounts.dragon_egg.desc2": "Изменяет породу дракона",

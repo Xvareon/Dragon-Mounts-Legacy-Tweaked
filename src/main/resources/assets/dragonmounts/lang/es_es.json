@@ -153,6 +153,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.frost": "Huevo generador de dragón de escarcha",
   "block.dragonmounts.dragon_egg.dragonmounts.frost": "Huevo de dragón de escarcha",
 
+  "dragon_breed.dragonmounts.black_ice": "Dragón de hielo negro",
+  "item.dragonmounts.spawn_egg.dragonmounts.black_ice": "Huevo generador de dragón de hielo negro",
+  "block.dragonmounts.dragon_egg.dragonmounts.black_ice": "Huevo de dragón de hielo negro",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Eclosiona en %s segundos.",
   "block.dragonmounts.dragon_egg.desc1": "Interactuar con el dragón:",
   "block.dragonmounts.dragon_egg.desc2": "Cambia el tipo de raza",

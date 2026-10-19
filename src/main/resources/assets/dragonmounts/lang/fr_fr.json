@@ -153,6 +153,10 @@
   "item.dragonmounts.spawn_egg.dragonmounts.frost": "Œuf d'apparition de dragon de givre",
   "block.dragonmounts.dragon_egg.dragonmounts.frost": "Œuf de dragon de givre",
 
+  "dragon_breed.dragonmounts.black_ice": "Dragon de glace noire",
+  "item.dragonmounts.spawn_egg.dragonmounts.black_ice": "Œuf d'apparition de dragon de glace noire",
+  "block.dragonmounts.dragon_egg.dragonmounts.black_ice": "Œuf de dragon de glace noire",
+
   "block.dragonmounts.dragon_egg.remaining_time": "Éclôt dans %s secondes.",
   "block.dragonmounts.dragon_egg.desc1": "Interagir avec le dragon :",
   "block.dragonmounts.dragon_egg.desc2": "Changer la race du dragon",
